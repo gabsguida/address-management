@@ -30,7 +30,7 @@ module.exports = {
           800: "#7F0404",
           900: "#480202",
         },
-        terciary: {
+        tertiary: {
           50: "#DDAAFD",
           100: "#D596FC",
           200: "#C56EFB",
@@ -44,9 +44,9 @@ module.exports = {
         },
         dark: "#20272C",
         gray: {
-          200: '#BBC4CE',
-          400: '#424E59'
-        }
+          200: "#BBC4CE",
+          400: "#424E59",
+        },
       },
     },
   },

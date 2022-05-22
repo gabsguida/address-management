@@ -1,9 +1,9 @@
 <template>
-  <div>TODO</div>
+  <p>TODO</p>
 </template>
 
 <script>
 export default {
-  name: "HomeView",
+  name: "LayoutSidebar",
 };
 </script>

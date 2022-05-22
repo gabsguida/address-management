@@ -6,6 +6,6 @@ import router from "./router";
 import "./assets/style/main.css";
 
 // tailwind
-import "./assets/tailwind.css";
+import "./assets/style/tailwind.css";
 
 createApp(App).use(router).mount("#app");
