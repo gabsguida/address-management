@@ -21,18 +21,14 @@
         {{ messageError }}
       </p>
 
-      <div class="flex flex-col items-start space-y-3 w-full lg:col-span-2" v-if="isLoading">
+      <div
+        class="flex flex-col items-start space-y-3 w-full lg:col-span-2"
+        v-if="isLoading"
+      >
         <div
           v-for="item in 2"
           :key="item"
-          class="
-            h-8
-            animate-pulse
-            bg-black
-            rounded
-            opacity-25
-            w-1/2
-          "
+          class="h-8 animate-pulse bg-black rounded opacity-25 w-1/2"
         ></div>
       </div>
 
@@ -146,6 +142,11 @@ export default {
         return;
       }
 
+      if (this.cepList.findIndex((cep) => cep.cep === this.cep) > -1) {
+        this.messageError = `O CEP ${this.cep} já foi inserido na lista de endereços`;
+        return;
+      }
+
       this.isLoading = true;
       this.messageError = null;
 
@@ -157,12 +158,8 @@ export default {
         });
 
         if (resp.data.erro == "true") {
+          this.isLoading = false;
           throw "CEP informado é inválido";
-        }
-
-        if (this.cepList.findIndex((cep) => cep.cep === resp.data.cep) > -1) {
-          this.messageError = `O CEP ${resp.data.cep} já foi inserido na lista de endereços`;
-          return;
         }
 
         this.cep = "";
