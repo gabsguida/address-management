@@ -4,7 +4,7 @@
 
     <main class="flex h-full overflow-hidden">
       <LayoutSidebar />
-      <router-view />
+      <router-view class="w-full h-full overflow-auto p-8" />
     </main>
   </div>
 </template>

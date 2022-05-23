@@ -9,7 +9,7 @@
       'pointer-events-none opacity-50 cursor-not-allowed': disabled,
       relative: to != null,
     }"
-    class="transition rounded-lg focus:outline-none active:outline-none inline-flex items-center whitespace-nowrap focus:bg-opacity-10 hover:bg-opacity-60"
+    class="transition rounded-lg focus:outline-none active:outline-none inline-flex items-center whitespace-nowrap focus:bg-opacity-10 hover:bg-opacity-60 text-white font-bold rounded-lg"
   >
     <router-link
       v-if="to != null"
