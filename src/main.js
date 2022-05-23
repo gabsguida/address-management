@@ -8,4 +8,7 @@ import "./assets/style/main.css";
 // tailwind
 import "./assets/style/tailwind.css";
 
-createApp(App).use(router).mount("#app");
+const app = createApp(App);
+
+app.use(router);
+app.mount("#app");

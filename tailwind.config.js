@@ -5,6 +5,11 @@ module.exports = {
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
       },
+      minHeight: {
+        10: "2.5rem",
+        11: "2.75rem",
+        13: "3.25rem",
+      },
       colors: {
         primary: {
           50: "#EAA7FF",
@@ -48,6 +53,7 @@ module.exports = {
           200: "#BBC4CE",
           300: "#75818C",
           400: "#424E59",
+          500: "#B7B7B7",
         },
       },
     },
